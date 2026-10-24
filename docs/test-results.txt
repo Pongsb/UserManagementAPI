@@ -1,0 +1,52 @@
+Publication cleanup verification on Linux x64, 24 October 2026.
+Command: dotnet run --project tests/UserManagementAPI.Tests --configuration Release --no-build
+
+PASS Missing token returns JSON 401
+PASS Invalid token returns JSON 401
+PASS Basic scheme is rejected
+PASS Bearer without credentials is rejected
+PASS Invalid token cannot create a user
+PASS Valid token retrieves an initially empty list
+PASS POST creates a user and returns a working Location
+PASS GET by ID retrieves the created user
+PASS GET all includes the created user
+PASS Bearer scheme is case insensitive
+PASS Empty object returns JSON 400
+PASS Empty name returns JSON 400
+PASS Whitespace name returns JSON 400
+PASS Invalid email returns JSON 400
+PASS Missing email returns JSON 400
+PASS Null name returns JSON 400
+PASS Null body returns JSON 400
+PASS Malformed JSON returns JSON 400
+PASS Wrong field type returns JSON 400
+PASS Name over 100 characters returns JSON 400
+PASS Email over 254 characters returns JSON 400
+PASS Empty request body returns JSON 400
+PASS POST without a content type returns JSON 415
+PASS Unsupported content type returns JSON 415
+PASS Duplicate email is rejected case insensitively
+PASS PUT updates an existing user and keeps its ID
+PASS PUT permits keeping one's own email
+PASS A former email becomes reusable after an update
+PASS PUT rejects another user's email
+PASS Invalid PUT leaves the original record unchanged
+PASS GET unknown ID returns JSON 404
+PASS PUT unknown ID returns JSON 404
+PASS DELETE unknown ID returns JSON 404
+PASS Noninteger ID returns JSON 404
+PASS Unknown route returns JSON 404
+PASS Unsupported method returns JSON 405
+PASS DELETE returns an empty 204 response
+PASS GET deleted user returns JSON 404
+PASS A deleted user's email can be reused
+PASS Concurrent unique creates produce unique IDs
+PASS Concurrent duplicate email permits exactly one creation
+PASS Unhandled exception returns JSON 500 without internal details
+PASS API remains available after an exception
+PASS Logs include final 200, rejected 401 and handled 500 responses
+PASS Exception endpoint is unavailable in Development
+PASS Missing and short configured tokens fail startup
+RESULT: 46 passed, 0 failed.
+
+RUN_EXIT=0
