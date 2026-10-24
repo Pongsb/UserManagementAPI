@@ -1,0 +1,18 @@
+Publication cleanup verification on Linux x64, 24 October 2026.
+SDK: 8.0.413; ASP.NET Core runtime: 8.0.19.
+Command: dotnet build UserManagementAPI.sln --configuration Release --source <empty-local-package-source> -p:UseSharedCompilation=false -p:NuGetAudit=false -m:1
+Absolute project paths are replaced with <project-root>.
+
+  Determining projects to restore...
+  Restored <project-root>/src/UserManagementAPI/UserManagementAPI.csproj (in 160 ms).
+  Restored <project-root>/tests/UserManagementAPI.Tests/UserManagementAPI.Tests.csproj (in 167 ms).
+  UserManagementAPI -> <project-root>/src/UserManagementAPI/bin/Release/net8.0/UserManagementAPI.dll
+  UserManagementAPI.Tests -> <project-root>/tests/UserManagementAPI.Tests/bin/Release/net8.0/UserManagementAPI.Tests.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:09.52
+
+BUILD_EXIT=0
