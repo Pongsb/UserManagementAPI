@@ -168,7 +168,3 @@ This is a course demonstration: data resets on restart, the store is process-loc
 - [ASP.NET Core model validation](https://learn.microsoft.com/en-us/aspnet/core/mvc/models/validation?view=aspnetcore-8.0)
 - [Create a GitHub repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories)
 - [Add files to a GitHub repository](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository)
-
-## Publication cleanup
-
-Sample user names are fictional, sample email addresses use `example.com`, and the automated runner generates its test credential at runtime. Private machine paths have been removed from published evidence. See [the cleanup notes](docs/PUBLICATION_CLEANUP.md) for the cleanup scope and fresh verification.
