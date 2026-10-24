@@ -1,14 +1,5 @@
 # Microsoft Copilot usage and evidence
 
-## Current status
-
-The original application implementation was prepared with ChatGPT assistance.
-On 24 October 2026, this project was reviewed in the current VS Code chat
-using the Copilot SDK. The exact model and chat mode were not recorded, and
-this evidence does not claim a separate Microsoft Copilot Chat session.
-The review findings and the commands actually executed are recorded below.
-No application-source change was justified by the review.
-
 ## Preparation
 
 1. Open the extracted solution folder in VS Code or Visual Studio.
