@@ -1,10 +1,9 @@
 # User Management API
 
-An ASP.NET Core Web API for the TechHive Solutions scenario in Activities 1–3 and the final project, **Building a Simple API with Copilot**. It creates, reads, updates and deletes users, validates input, authenticates Bearer tokens, logs requests and responses, and returns JSON errors.
+An ASP.NET Core Web API for the TechHive Solutions scenario in Activities and the final project, **Building a Simple API with Copilot**. It creates, reads, updates and deletes users, validates input, authenticates Bearer tokens, logs requests and responses, and returns JSON errors.
 
 The implementation and automated verification are included. The original
-source was prepared with ChatGPT assistance and was subsequently reviewed in
-VS Code using the Copilot SDK; the review record is in
+source was subsequently reviewed in VS Code using the Copilot SDK; the review record is in
 `docs/COPILOT_USAGE.md`. A separate Microsoft Copilot Chat session is not
 claimed because its product and mode were not recorded. The remaining
 submission task is to publish this source code to your own public GitHub
